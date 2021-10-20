@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	background-color: #6dc1f7;
+}
+
+nav #myPortfolioNav ul {
+	display: flex;
+	justify-content: end;
+	width: 100%;
+}
+
+nav #myPortfolioNav ul li {
+	margin: 0 10px;
+}
+
+nav #myPortfolioNav ul li a {
+	color: #000 !important;
+	font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero {
+    background-color: #9f7cf4;
+    background-image: linear-gradient(0deg, #9f7cf4 20%, #6dc1f7 66%);
+    height: 100vh;
+    border-radius: 0;
+}
+
+.hero-bg {
+    background: url(./images/new_hero_bg.gif);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper {
+	padding-left: 20%;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.header-wrapper h1, .header-wrapper p {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #29264E;
+}
+
+.header-wrapper h1 span {
+	font-weight: 700;
+	font-size: 5rem;
+}
+
+.header-wrapper .know-more {
+	color: #29264E;
+    background-color: transparent;
+    border: 2px solid #29264E;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    margin: 40px auto;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.header-wrapper .know-more:after {
+	font-family: 'FontAwesome';
+	content: "\f061";
+	margin-left: 10px;
+	font-size: 13px;
+	padding-bottom: 2px;
+}
+
+.header-wrapper .know-more:hover {
+	color: #fff;
+	border: 2px solid #29264E;
+	background-color: #29264E;
+}
+
+.header-wrapper .know-more:hover:after {
+	content: "\f063";
+}
+
+
+
+
+#about-me {
+	height: 100vh;
+	padding: 6rem 0;
+}
+
+#about-me h1 {
+	font-weight: 700;
+	font-size: 2rem;
+}
