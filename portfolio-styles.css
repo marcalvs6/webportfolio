@@ -7,6 +7,11 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
 nav {
 	background-color: #6dc1f7;
 }
@@ -24,7 +29,6 @@ nav #myPortfolioNav ul li {
 nav #myPortfolioNav ul li a {
 	color: #000 !important;
 	font-size: 14px;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -46,6 +50,7 @@ nav #myPortfolioNav ul li a {
 
 .header-wrapper {
 	padding-left: 20%;
+    width: 55%;
 }
 
 .jumbotron {
@@ -53,14 +58,14 @@ nav #myPortfolioNav ul li a {
 }
 
 .header-wrapper h1, .header-wrapper p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #29264E;
 }
 
 .header-wrapper h1 span {
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: 8rem;
 }
 
 .header-wrapper .know-more {
@@ -95,14 +100,139 @@ nav #myPortfolioNav ul li a {
 }
 
 
-
-
-#about-me {
+#about-me, #tools-section {
 	height: 100vh;
+	padding: 6rem 0;
+	padding-top: 8rem;
+}
+
+#about-me h1, #project-section h1, #tools-section h1, #contact-section h1 {
+	font-weight: 700;
+	font-size: 2.4rem;
+	color: #29264E;
+}
+
+#about-me img {
+    margin: 20px 0;
+    box-shadow: 10px 10px #6dc1f7; 
+    height: 90%;
+    margin: 40px auto;
+}
+
+#about-me .border p, #about-me .border span {
+    font-size: 15px;
+	color: #29264E;
+}
+
+#about-me .border {
+	box-shadow: 10px 10px #29264E;
+}
+
+span.dash {
+	border-top: 4px dashed #dee2e6;
+	display: block;
+	margin: 30px 0 20px 0;
+}
+
+#project-section, #contact-section {
+	padding: 6rem 0;
+	background-color: #fafbfd;
+}
+
+#project-section .card {
+	border-radius: 0;
+	transition: 0.3s;
+	border: 2px solid #29264E;
+}
+
+#project-section .card:hover {
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+#project-section .card img {
+	height: 330px;
+}
+
+#project-section .card h5 {
+	font-weight: 700;
+}
+
+#project-section .card p {
+	font-size: 13px;
+}
+
+#project-section .card a {
+	width: 100%;
+    border-radius: 0;
+    color: #fff !important;
+    background-color: #29264E;
+    border: 0;
+    height: 42px;
+    padding: .6rem;
+}
+
+#tools-section {
+	height: auto;
 	padding: 6rem 0;
 }
 
-#about-me h1 {
+#tools-section p {
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.4rem;
+}
+
+#contact-section p {
+	font-size: 13px;
+}
+
+#contact-section input, #contact-section textarea{
+	background-color: #fafcfe;
+    border-radius: 0;
+    height: 50px;
+}
+
+#contact-section textarea {
+	resize: none;
+	height: 30vh;
+}
+
+#contact-section .submit {
+	color: #fff;
+	background-color: #29264E;
+	border-radius: 0;
+	float: right;
+}
+
+#contact-section .map-wrapper, #contact-section .map-wrapper iframe {
+	width: 100%;
+}
+
+#contact-section .border {
+	background-color: #fafcfe;
+	width: auto;
+}
+
+footer {
+	padding: 10px;
+	background-color: #29264E;
+	color: #fff;
+	justify-content: center;
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+}
+
+footer ul li {
+	margin: 0 0 0 30px;
+}
+
+footer ul li a, footer p {
+	color: #fff !important;
+	text-decoration: none !important;
+	font-size: 13px;
+	margin: 0;
 }
