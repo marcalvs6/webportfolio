@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
 	margin: 0;
@@ -27,9 +28,13 @@ nav #myPortfolioNav ul li {
 }
 
 nav #myPortfolioNav ul li a {
-	color: #000 !important;
+	color: #29264E !important;
 	font-size: 14px;
     font-weight: 700;
+}
+
+nav .mobile-icon {
+	display: none;
 }
 
 .hero {
@@ -42,15 +47,14 @@ nav #myPortfolioNav ul li a {
 .hero-bg {
     background: url(./images/new_hero_bg.gif);
     background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-left: 15%;
 }
 
 .header-wrapper {
-	padding-left: 20%;
-    width: 55%;
+    width: 36%;
 }
 
 .jumbotron {
@@ -99,11 +103,15 @@ nav #myPortfolioNav ul li a {
 	content: "\f063";
 }
 
-
 #about-me, #tools-section {
 	height: 100vh;
-	padding: 6rem 0;
+	padding: 5rem 0;
 	padding-top: 8rem;
+}
+
+#about-me {
+	/*background: url('./images/section_bg.gif');
+	background-size: contain;*/
 }
 
 #about-me h1, #project-section h1, #tools-section h1, #contact-section h1 {
@@ -126,12 +134,13 @@ nav #myPortfolioNav ul li a {
 
 #about-me .border {
 	box-shadow: 10px 10px #29264E;
+	background-color: #fff;
 }
 
 span.dash {
 	border-top: 4px dashed #dee2e6;
 	display: block;
-	margin: 30px 0 20px 0;
+	margin: 50px 0 20px 0;
 }
 
 #project-section, #contact-section {
@@ -215,7 +224,8 @@ span.dash {
 
 footer {
 	padding: 10px;
-	background-color: #29264E;
+	/*background-color: #29264E;*/
+	background-color: #6dc1f7;
 	color: #fff;
 	justify-content: center;
 }
@@ -227,12 +237,12 @@ footer ul {
 }
 
 footer ul li {
-	margin: 0 0 0 30px;
+	margin: 0 30px 0 0px;
 }
 
 footer ul li a, footer p {
-	color: #fff !important;
+	color: #29264E !important;
 	text-decoration: none !important;
-	font-size: 13px;
+	font-size: 12px;
 	margin: 0;
 }
